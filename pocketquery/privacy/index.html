@@ -38,13 +38,13 @@ footer { color: var(--muted); font-size: 13px; padding: 24px 0 40px; border-top:
 <header><div class="wrap"><img src="../icon-512.png" alt=""><span>PocketQuery</span></div></header>
 <main class="wrap">
 <h1>PocketQuery 개인정보처리방침</h1>
-<p>시행일: 2026년 10월 21일</p>
+<p>시행일: 2026년 10월 21일 · English: <a href="https://cdhnoel-hash.github.io/pocketquery/privacy/en/">https://cdhnoel-hash.github.io/pocketquery/privacy/en/</a></p>
 <p>최동한(이하 "운영자")은 Android 앱 PocketQuery(이하 "앱")를 이용하는 분의 개인정보를 중요하게 생각하며, 「개인정보 보호법」 등 관련 법령을 지킵니다. 이 방침은 앱이 어떤 정보를 어디에 두고 누구와 주고받는지 설명합니다.</p>
 <h2 id="s1">1. 요약</h2>
 <ul><li>운영자는 <strong>별도 서버를 운영하지 않으며, 앱 이용자의 정보를 운영자에게 보내거나 모으지 않습니다.</strong></li><li>접속 정보·비밀번호·쿼리 이력은 <strong>이용자의 기기 안에만</strong> 저장됩니다. 비밀번호와 SSH 키는 기기의 Android Keystore 로 암호화합니다.</li><li>쿼리와 데이터는 <strong>이용자가 직접 지정한 데이터베이스 서버(및 SSH 서버)와만</strong> 주고받습니다.</li><li>앱에 표시되는 광고를 위해 <strong>Google AdMob</strong> 이 광고 ID 등 기기 정보를 수집합니다 (아래 4장). 광고 제거를 구매하면 광고 SDK 를 시작하지 않습니다.</li><li>인앱 결제는 <strong>Google Play</strong> 가 처리하며, 운영자는 결제 수단 정보를 받지 않습니다.</li></ul>
 <h2 id="s2">2. 기기 안에만 저장되는 정보</h2>
 <p>앱은 기능을 제공하기 위해 아래 정보를 이용자의 기기(앱 전용 저장소)에 저장합니다. 이 정보는 운영자에게 전송되지 않습니다.</p>
-<div class="table"><table><thead><tr><th>정보</th><th>목적</th><th>보관</th></tr></thead><tbody><tr><td>접속 정보: 이름, DB 종류, 호스트·포트, 데이터베이스 이름, 사용자 이름, 환경 표시(PROD 등), TLS·SSH 설정, 가져온 CA 인증서, 승인한 SSH 서버 키</td><td>DB 접속</td><td>이용자가 접속을 삭제하거나 앱을 지울 때까지</td></tr><tr><td>저장한 DB 비밀번호, SSH 비밀번호·개인키·키 암호</td><td>다시 입력하지 않고 접속</td><td>Android Keystore 의 키(AES-256-GCM)로 암호화해 저장. 비밀번호는 "저장 안 함"을 고를 수 있고, 그러면 접속하는 동안 메모리에만 둠</td></tr><tr><td>쿼리 이력(접속별 최근 500개), 스니펫, 편집기 탭 내용</td><td>이력·다시 열기</td><td>이용자가 지우거나 앱을 지울 때까지</td></tr><tr><td>앱에서 만들거나 가져온 SQLite 파일 (가져온 파일은 복사본)</td><td>SQLite 사용</td><td>이용자가 지우거나 앱을 지울 때까지</td></tr><tr><td>설정(화면 보호, 앱 잠금), 광고 제거 구매 여부(확인 결과 캐시)</td><td>앱 설정</td><td>앱을 지울 때까지</td></tr></tbody></table></div>
+<div class="table"><table><thead><tr><th>정보</th><th>목적</th><th>보관</th></tr></thead><tbody><tr><td>접속 정보: 이름, DB 종류, 호스트·포트, 데이터베이스 이름, 사용자 이름, 환경 표시(PROD 등), TLS·SSH 설정, 가져온 CA 인증서, 승인한 SSH 서버 키</td><td>DB 접속</td><td>이용자가 접속을 삭제하거나 앱을 지울 때까지</td></tr><tr><td>저장한 DB 비밀번호, SSH 비밀번호·개인키·키 암호</td><td>다시 입력하지 않고 접속</td><td>Android Keystore 의 키(AES-256-GCM)로 암호화해 저장. 비밀번호는 "저장 안 함"을 고를 수 있고, 그러면 접속하는 동안 메모리에만 둠</td></tr><tr><td>쿼리 이력(접속별 최근 500개), 스니펫, 편집기 탭 내용</td><td>이력·다시 열기</td><td>이용자가 지우거나 앱을 지울 때까지</td></tr><tr><td>앱에서 만들거나 가져온 SQLite 파일 (가져온 파일은 복사본)</td><td>SQLite 사용</td><td>이용자가 지우거나 앱을 지울 때까지</td></tr><tr><td>설정(화면 보호, 앱 잠금, 언어), 광고 제거 구매 여부(확인 결과 캐시)</td><td>앱 설정</td><td>앱을 지울 때까지</td></tr></tbody></table></div>
 <ul><li>이 정보는 Android 클라우드 백업과 기기 간 이전에 <strong>포함하지 않도록</strong> 설정했습니다.</li><li>결과를 내보내거나 백업할 때는 이용자가 고른 위치(파일 선택기) 또는 이용자가 고른 공유 대상 앱으로만 저장·전달됩니다.</li><li>앱 잠금은 Android 의 생체 인증·화면 잠금 기능(BiometricPrompt)을 사용합니다. 지문·얼굴 정보는 Android 시스템이 처리하며 앱은 접근하지 않습니다.</li></ul>
 <h2 id="s3">3. 이용자가 지정한 서버와 주고받는 정보</h2>
 <p>앱은 이용자가 입력한 데이터베이스 서버(PostgreSQL, MySQL·MariaDB, SQL Server)와 SSH 서버에 접속해 계정 정보, 이용자가 실행한 SQL, 그 결과를 주고받습니다. 이 서버들은 이용자(또는 이용자의 조직)가 관리하며, 그 서버의 정보 처리는 해당 관리자의 정책을 따릅니다. 운영자는 이 통신 내용을 받지 않습니다.</p>
@@ -55,7 +55,7 @@ footer { color: var(--muted); font-size: 13px; padding: 24px 0 40px; border-top:
 <p>이 정보는 광고 표시, 광고 성과 측정, 부정 사용 방지, (동의한 경우) 맞춤 광고에 쓰입니다. 자세한 내용은 Google 의 공개 자료를 참고하세요.</p>
 <ul><li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li><li>Google 이 파트너 사이트·앱의 정보를 사용하는 방식: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li><li>AdMob 이 수집하는 데이터(Play 데이터 보안 섹션 안내): <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">https://developers.google.com/admob/android/privacy/play-data-disclosure</a></li></ul>
 <p><strong>동의와 선택</strong></p>
-<ul><li>유럽경제지역(EEA)·영국 등 동의가 필요한 지역에서는 처음 실행할 때 Google UMP(User Messaging Platform) 동의 화면을 보여 주며, 앱의 설정 → "광고 개인정보 설정"에서 언제든 바꿀 수 있습니다.</li><li>Android 설정 → 개인정보 보호 → 광고에서 광고 ID 를 재설정하거나 삭제할 수 있습니다.</li><li>광고 제거를 구매하면 앱은 동의 화면을 띄우지 않고 광고 SDK 를 초기화하지 않습니다.</li></ul>
+<ul><li>유럽경제지역(EEA)·영국·스위스 등 동의가 필요한 지역에서는 처음 실행할 때 Google UMP(User Messaging Platform) 동의 화면을 보여 주며, 앱의 설정 → "광고 개인정보 설정"에서 언제든 동의를 바꾸거나 철회할 수 있습니다.</li><li>캘리포니아 등 개인정보 법이 있는 미국 주의 이용자는 앱의 설정 → "광고 개인정보 설정"에서 광고 목적의 개인정보 판매·공유를 거부(Do Not Sell or Share)할 수 있습니다. 거부하면 Google 은 제한된 데이터 처리 방식으로 광고를 제공합니다.</li><li>Android 설정 → 개인정보 보호 → 광고에서 광고 ID 를 재설정하거나 삭제할 수 있습니다.</li><li>광고 제거를 구매하면 앱은 동의 화면을 띄우지 않고 광고 SDK 를 초기화하지 않습니다.</li></ul>
 <h2 id="s5">5. 인앱 결제 (Google Play)</h2>
 <p>광고 제거 구매는 Google Play 결제 시스템으로 처리됩니다. 결제 수단과 결제 정보는 Google 이 처리하며 운영자는 받지 않습니다. 앱은 구매가 유효한지 확인하기 위해 Google Play 가 기기에 알려 주는 구매 정보(상품 ID, 구매 상태, 구매 토큰)를 기기 안에서만 확인합니다.</p>
 <ul><li>Google Play 서비스 약관·개인정보처리방침: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li></ul>
